@@ -66,4 +66,4 @@ Lite Chat was developed by [Arash Yeganeh](https://github.com/arashyeganeh).
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://chat.openai.com/LICENSE) file for more information.
+This project is licensed under the MIT License.
