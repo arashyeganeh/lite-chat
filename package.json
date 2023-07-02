@@ -1,6 +1,6 @@
 {
   "name": "lite-chat",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A lightweight chat application built with Node.js, Express and Socket.IO, designed for real-time communication without the need for a persistent database.",
   "main": "app.js",
   "scripts": {
