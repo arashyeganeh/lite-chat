@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Lite</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="h-screen lg:px-20 lg:py-5 p-5">
+      <div class="wrapper">
+        <div class="content" id="content"></div>
+        <form id="message-form" class="input" action="" method="POST">
+          <input
+            type="text"
+            id="message-form-input"
+            placeholder="Write a message"
+            autocomplete="off"
+          />
+          <button type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 122.56 122.88"
+              class="h-full"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <title>send</title>
+              <path
+                class="cls-1"
+                d="M2.33,44.58,117.33.37a3.63,3.63,0,0,1,5,4.56l-44,115.61h0a3.63,3.63,0,0,1-6.67.28L53.93,84.14,89.12,33.77,38.85,68.86,2.06,51.24a3.63,3.63,0,0,1,.27-6.66Z"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="room.script.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </body>
+</html>

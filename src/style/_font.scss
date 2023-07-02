@@ -1,0 +1,24 @@
+$baseDir: "../../asset/font/";
+$fonts: (
+  sfpro: (
+    bold,
+    normal,
+    500,
+  ),
+);
+
+@each $font-family, $value in $fonts {
+  @each $font-weight in $value {
+    @font-face {
+      font-family: $font-family;
+      font-weight: $font-weight;
+      font-style: normal;
+      src: url("#{$baseDir}/#{$font-family}_#{$font-weight}.woff2")
+          format("woff2"),
+        url("#{$baseDir}/#{$font-family}_#{$font-weight}.woff")
+          format("woff"),
+        url("#{$baseDir}/#{$font-family}_#{$font-weight}.ttf")
+          format("truetype");
+    }
+  }
+}

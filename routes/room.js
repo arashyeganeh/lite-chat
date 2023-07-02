@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/', (req, res) => {
     const nickName = req.cookies['nickname'];
     if (nickName) {
-        res.sendFile(path.resolve('./', 'public', 'room.html'))
+        res.sendFile(path.resolve('./', 'view', 'room.html'))
     } else {
         res.redirect('/login')
     }

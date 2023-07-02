@@ -4,7 +4,9 @@
     <img alt="nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?logo=Node.js&logoColor=white"/>
     <img alt="express js" src="https://img.shields.io/badge/-Express%20JS-F7F7F7?logo=express&logoColor=4A4A4A"/>
     <img alt="socket.io" src="https://img.shields.io/badge/-Socket.IO-F962AA?logo=socket.io&logoColor=white"/>
+    <img alt="webpack" src="https://img.shields.io/badge/-Webpack-8DD6F9?logo=webpack&logoColor=white"/>
     <img alt="javascript" src="https://img.shields.io/badge/-JavaScript-EBD64D?logo=javascript&logoColor=white"/>
+    <img alt="sass" src="https://img.shields.io/badge/-Sass-C55F92?logo=SASS&logoColor=white"/>
     <img alt="tailwindcss" src="https://img.shields.io/badge/-TailwindCSS-41A2AD?logo=tailwindcss&logoColor=white"/>
 </p>
 
@@ -29,7 +31,8 @@ To install and run Lite Chat, follow these steps:
 1. Clone the repository: `git clone https://github.com/arashyeganeh/Lite-Chat`
 2. Navigate to the project directory: `cd Lite-Chat`
 3. Install the dependencies: `npm install`
-4. Start the application: `npm start`
+4. Build scripts and assets: `npm run build`
+5. Start the application: `npm start`
 
 The application will be accessible at `http://localhost`.
 
@@ -54,9 +57,12 @@ npm run build
 
 Lite Chat relies on the following dependencies:
 
+- NodeJs
 - express
 - socket.io
-- tailwindcss
+- Webpack
+- Sass
+- Tailwind css
 
 These dependencies are automatically installed when running `npm install`.
 

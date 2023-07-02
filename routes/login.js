@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
     if (nickName) {
         res.redirect('/room')
     } else {
-        res.sendFile(path.resolve('./', 'public', 'login.html'))
+        res.sendFile(path.resolve('./', 'view', 'login.html'))
     }
 });
 

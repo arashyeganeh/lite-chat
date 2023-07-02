@@ -1,0 +1,43 @@
+@import "../../style/global.scss";
+
+.wrapper {
+  @apply flex flex-col h-full backdrop-blur-md shadow-lg rounded-md p-2;
+  background-color: #08aeea;
+  background-image: linear-gradient(45deg, #08aeea 0%, #2af598 100%);
+}
+
+.content {
+  @apply flex flex-col rounded-md overflow-y-auto space-y-4 p-2;
+  background-color: rgb(255 255 255 / 20%);
+  height: calc(100% - 2.5rem);
+}
+
+.message {
+  @apply inline-block md:w-1/2 w-full bg-white/50 rounded-md p-2;
+}
+
+.message.me {
+  @apply self-end bg-blue-600/50 text-white;
+}
+
+.message span {
+  @apply text-base font-bold;
+}
+
+.message p {
+  @apply break-words ml-1;
+}
+
+.input {
+  @apply flex flex-row items-center bg-white border-gray-300 shadow-sm rounded-md mt-2 overflow-hidden;
+  height: 2.5rem;
+}
+
+.input [type="text"] {
+  @apply grow border-0;
+  box-shadow: none !important;
+}
+
+.input [type="submit"] {
+  @apply h-full p-2 fill-zinc-500 hover:fill-blue-500 duration-200;
+}
