@@ -1,7 +1,12 @@
 @import "../../style/global.scss";
 
+body {
+  @apply flex flex-col h-screen lg:px-20 lg:py-5 p-5;
+}
+
 .wrapper {
-  @apply flex flex-col h-full backdrop-blur-md shadow-lg rounded-md p-2;
+  @apply flex flex-col backdrop-blur-md shadow-lg rounded-md p-2;
+  flex: 1 1 auto;
   background-color: #08aeea;
   background-image: linear-gradient(45deg, #08aeea 0%, #2af598 100%);
 }
@@ -14,30 +19,49 @@
 
 .message {
   @apply inline-block md:w-1/2 w-full bg-white/50 rounded-md p-2;
-}
 
-.message.me {
-  @apply self-end bg-blue-600/50 text-white;
-}
+  &.me {
+    @apply self-end bg-blue-600/50 text-white;
+  }
 
-.message span {
-  @apply text-base font-bold;
-}
+  span {
+    @apply text-base font-bold;
+  }
 
-.message p {
-  @apply break-words ml-1;
+  p {
+    @apply break-words ml-1;
+  }
 }
 
 .input {
   @apply flex flex-row items-center bg-white border-gray-300 shadow-sm rounded-md mt-2 overflow-hidden;
   height: 2.5rem;
+  & [type="text"] {
+    @apply grow border-0;
+    box-shadow: none !important;
+  }
+
+  & [type="submit"] {
+    @apply h-full p-2 fill-zinc-500 hover:fill-blue-500 duration-200;
+  }
 }
 
-.input [type="text"] {
-  @apply grow border-0;
-  box-shadow: none !important;
-}
+footer {
+  @apply flex items-center justify-center text-white mt-5 space-x-2;
+  a {
+    @apply flex items-center justify-center bg-fuchsia-500 rounded-lg overflow-hidden;
+  }
+  i {
+    @apply bg-fuchsia-600 p-2;
+  }
+  span {
+    @apply px-2;
+  }
 
-.input [type="submit"] {
-  @apply h-full p-2 fill-zinc-500 hover:fill-blue-500 duration-200;
+  .logout{
+    @apply bg-red-500;
+    i {
+      @apply bg-red-600;
+    }
+  }
 }
